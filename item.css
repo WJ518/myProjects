@@ -1,0 +1,557 @@
+.goods-classification {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.goods-classification li {
+    float: left;
+}
+
+.goods-classification li:last-child a {
+    color: #999;
+}
+
+.goods-classification li:nth-child(-n+3)::after {
+    content: '/';
+    margin: 0 10px;
+    color: #ccc;
+}
+
+.bigImg-wrap {
+    /* 不可以同时给父子元素添加相对定位(.img-wrap) */
+    position: relative;
+}
+
+.bigImg-wrap>img {
+    width: 402px;
+    height: 402px;
+    border: 1px solid #ccc;
+}
+
+.bigImg-wrap .mask {
+    display: none;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #feeea7;
+    opacity: .5;
+    cursor: move;
+}
+
+.bigImg-wrap .side {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 410px;
+    width: 402px;
+    height: 402px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.bigImg-wrap .side>img {
+    position: absolute;
+}
+
+.littleImg-wrap {
+    position: relative;
+    margin-top: 10px;
+    padding-left: 31px;
+}
+
+.littleImg-wrap a {
+    display: inline-block;
+    width: 62px;
+    height: 62px;
+    margin-right: 4px;
+    border: 1px solid #ccc;
+}
+
+.littleImg-wrap a.hover {
+    border-color: #ed1b55;
+}
+
+.littleImg-wrap a img {
+    width: 60px;
+    height: 60px;
+}
+
+.littleImg-wrap .btn-prev,
+.littleImg-wrap .btn-next {
+    position: absolute;
+    top: 0;
+    width: 22px;
+    margin-right: 0;
+    text-align: center;
+    line-height: 60px;
+    background-color: #f3f3f3;
+    font-size: 25px;
+}
+
+.btn-prev {
+    left: 0;
+}
+
+.btn-next {
+    right: 0;
+}
+
+.font-wrap {
+    width: 700px;
+}
+
+.font-wrap h3 {
+    margin: 10px 0;
+}
+
+.font-wrap>div>.title {
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 5px;
+}
+
+.price {
+    padding-top: 10px;
+    height: 40px;
+    background-color: #f3f3f3;
+}
+
+.price .content i {
+    color: #ed1b55;
+}
+
+.price .content i b {
+    font-size: 18px;
+}
+
+.price .content i em {
+    margin: 0 400px 0 10px;
+    color: #005ea7;
+}
+
+.discount {
+    height: 60px;
+    padding-bottom: 10px;
+    background-color: #f3f3f3;
+}
+
+.discount .content span {
+    margin-right: 10px;
+    padding: 0 5px;
+    background-color: #ed1b55;
+    color: #fff;
+}
+
+.discount .content p,
+.delivery .content p {
+    margin-top: 5px;
+}
+
+.discount .content a {
+    margin-left: 10px;
+    color: #999;
+}
+
+.support {
+    height: 30px;
+    line-height: 30px;
+}
+
+.delivery {
+    height: 50px;
+}
+
+.delivery .content select {
+    margin-right: 10px;
+}
+
+.inlineBlock>a {
+    display: inline-block;
+    margin-right: 5px;
+    padding: 0 8px;
+    height: 30px;
+    text-align: center;
+    line-height: 28px;
+    border: 1px solid #ccc;
+}
+
+.inlineBlock>a.active {
+    border-color: #ed1b55;
+    color: #000;
+}
+
+.color,
+.edition,
+.ram,
+.buyWay,
+.suit {
+    margin: 15px 0;
+}
+
+.bottom {
+    position: relative;
+    padding-left: 5px;
+}
+
+.join-car {
+    position: absolute;
+    top: 0;
+    left: 100px;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-color: #ed1b55;
+    font-size: 16px;
+    color: #fff;
+}
+
+.join-car:hover {
+    color: #fff;
+    opacity: .8;
+}
+
+.bottom .numCount {
+    position: relative;
+    width: 70px;
+}
+
+.bottom .numCount input {
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    line-height: 38px;
+    border: 1px solid #ccc;
+    border-right: 0;
+}
+
+.numCount a {
+    position: absolute;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 18px;
+    border: 1px solid #ccc;
+    background-color: #f3f3f3;
+}
+
+.numCount .increase {
+    top: 0;
+    border-bottom: 0;
+}
+
+.numCount .decrease {
+    top: 20px;
+}
+
+.asideBox {
+    width: 210px;
+    height: 500px;
+    background-color: aquamarine;
+}
+
+.detail {
+    width: 980px;
+}
+
+.detail-hd {
+    position: relative;
+    border-bottom: 1px solid #ed1b55;
+    background-color: #f5f5f5;
+}
+
+.detail-hd li {
+    float: left;
+    padding: 10px 25px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.detail-hd li:hover {
+    color: #ed1b55;
+}
+
+.detail-hd li.checked {
+    background-color: #ed1b55;
+    color: #fff;
+}
+
+.detail-hd .rightBox {
+    position: absolute;
+    top: 6px;
+    right: 10px;
+}
+
+.rightBox>a {
+    display: inline-block;
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #ed1b55;
+    color: #fff;
+}
+
+.rightBox a:hover {
+    opacity: .8;
+}
+
+.rightBox a:hover+.tip {
+    display: block;
+}
+
+.rightBox .tip {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    z-index: 9;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.rightBox .tip img {
+    width: 115px;
+}
+
+.rightBox .tip b {
+    margin-right: 5px;
+    font-size: 16px;
+    color: #ed1b55;
+}
+
+.introduce p {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding-left: 40px;
+}
+
+.introduce ul li {
+    float: left;
+    width: 245px;
+    margin-bottom: 5px;
+    padding-left: 40px;
+}
+
+.multiparameter {
+    height: 25px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.multiparameter .more {
+    float: right;
+    margin-right: 20px;
+    color: #2440b3;
+}
+
+.introduce>img {
+    width: 980px;
+}
+
+.specifications {
+    padding-top: 20px;
+}
+
+.specifications .s-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #e4e4e4;
+    line-height: 28px;
+    color: #999;
+}
+
+.s-item:last-child {
+    border-bottom: 0;
+}
+
+.s-item h3,
+.s-item dl {
+    float: left;
+}
+
+.s-item h3 {
+    width: 110px;
+    text-align: right;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.s-item .parameter {
+    width: 165px;
+    margin-right: 50px;
+    text-align: right;
+}
+
+.parameter dt {
+    position: relative;
+}
+
+.add-icon {
+    position: absolute;
+    top: 6px;
+    right: -25px;
+    width: 16px;
+    height: 16px;
+    background: url(../img/doubt.png) no-repeat;
+    cursor: pointer;
+}
+
+.afterMarket h3,
+.evaluate h3,
+.community h3 {
+    height: 42px;
+    line-height: 40px;
+    margin: 20px 0;
+    padding-left: 10px;
+    border: 1px solid #e4e4e4;
+    background-color: #f5f5f5;
+}
+
+.afterMarket dl {
+    padding: 20px 20px 0 30px;
+}
+
+.afterMarket dl dt {
+    height: 32px;
+    line-height: 32px;
+    font-size: 16px;
+    color: #c81623;
+}
+
+.afterMarket dl dt i {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    background: url(../img/zp1.png) no-repeat;
+    background-size: 32px;
+    vertical-align: -15px;
+}
+
+
+/* 注意：
+(1)E:nth-child(n)先对父元素里所有孩子（同类/不同类）排序完成后找到第n个孩子，然后再看是否和E相匹配（不匹配则无效）
+(2)E:nth-of-type(n)会先匹配元素E，再根据E找这一类元素中的第n个 */
+
+.afterMarket dl dt:nth-of-type(2) i {
+    background: url(../img/zp2.png);
+    background-size: 32px;
+}
+
+.afterMarket dl dt:nth-of-type(3) i {
+    background: url(../img/zp.png);
+    background-size: 32px;
+}
+
+.afterMarket dl dt:nth-of-type(4) i {
+    background: url(../img/zp3.png);
+    background-size: 32px;
+}
+
+.afterMarket dl dd {
+    margin-bottom: 30px;
+    padding-left: 45px;
+}
+
+.afterMarket .explain {
+    margin-bottom: 30px;
+    padding-left: 10px;
+    line-height: 22px;
+}
+
+.afterMarket .explain b {
+    color: #c81623;
+}
+
+.afterMarket .explain b:nth-of-type(2) {
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.evaluate .comment {
+    position: relative;
+    height: 140px;
+    padding: 5px 0 25px 130px;
+}
+
+.comment .favor-rating {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+}
+
+.favor-rating span {
+    display: inline-block;
+    margin-top: -6px;
+    font-size: 20px;
+    color: #ed1b55;
+}
+
+.favor-rating span i {
+    font-size: 40px;
+}
+
+.comment .tag-list li {
+    float: left;
+    height: 24px;
+    line-height: 22px;
+    margin: 0 15px 12px 0;
+    padding: 0 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #999;
+    cursor: pointer;
+}
+
+.tag-list li:hover {
+    border-color: #333;
+    color: #333;
+}
+
+.tag-list li.selected {
+    border-color: #ed1b55;
+    color: #ed1b55;
+}
+
+.community h3 {
+    margin-bottom: 0;
+}
+
+.community .ask-wrap {
+    position: relative;
+    height: 80px;
+    padding-top: 28px;
+    text-align: center;
+    background-color: #f7f7f7;
+    font-size: 14px;
+}
+
+.ask-wrap i {
+    position: absolute;
+    top: 5px;
+    left: 180px;
+    width: 123px;
+    height: 75px;
+    background: url(../img/icon-dog.png) no-repeat;
+}
+
+.ask-wrap a {
+    display: inline-block;
+    width: 95px;
+    height: 28px;
+    margin-left: 10px;
+    text-align: center;
+    line-height: 26px;
+    border: 1px solid #ed1b55;
+    border-radius: 14px;
+    color: #ed1b55;
+}
+
+.ask-wrap a:hover {
+    background-color: #ed1b55;
+    color: #fff;
+}
